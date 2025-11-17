@@ -119,6 +119,20 @@ ol {
     bottom: 2px;
     left: 20px;
 }
+.menuOP{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    justify-content: right;
+    align-items: right;
+}
+.aiMenu1{
+    display: flex;
+    gap: 60px;
+}
+.searchContain{
+    margin-bottom: 20px;
+}
 
 /* End of CSS file */
   

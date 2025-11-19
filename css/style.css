@@ -53,6 +53,13 @@ h4 {
 
 }
 
+h5, p {
+    font-family: "Ysabeau", sans-serif;
+    color: rgb(185, 173, 249);
+    text-align: center;
+
+}
+
 ol {
 
     padding: 0.2em;
@@ -77,10 +84,10 @@ ol {
     font-style: italic;
 }
 
-/* Button used on the index page to navigate to MainPage */
-.nav-actions {
+
+.content-alignment {
     text-align: center;
-    margin-top: 12px;
+    margin-top: 2px;
 }
 
 .btn {
@@ -93,7 +100,7 @@ ol {
     border-radius: 36px;
     font-family: "Ysabeau";
     font-weight: 1600;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
     transition: transform .12s ease, box-shadow .12s ease;
 }
 .btn:hover {
@@ -103,6 +110,9 @@ ol {
 .btn:active { transform: translateY(0); }
 
 .footer {
+    font-family: "Ysabeau", sans-serif;
+    color: rgb(145, 134, 198);
+    text-align: center;
     position: absolute;
     bottom: 2px;
     right: 20px;
@@ -113,8 +123,8 @@ ol {
 
 .copyright {
     font-family: "Ysabeau", sans-serif;
-    color: rgb(145, 134, 198);
-    text-align: left;
+    color: rgb(189, 178, 244);
+    text-align: center;
     position: absolute;
     bottom: 2px;
     left: 20px;
@@ -126,13 +136,95 @@ ol {
     justify-content: right;
     align-items: right;
 }
-.aiMenu1{
-    display: flex;
-    gap: 60px;
-}
+
 .searchContain{
     margin-bottom: 20px;
 }
+
+table {
+    table-layout: flex;
+    width: flex;
+    border: 0px;
+}
+
+.search-query {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+    width: 600px;
+    padding: 30px 20px;
+    background: linear-gradient(90deg,#d0c6ff,#d7e7ff);
+    color: rgb(18, 0, 11);
+    text-decoration: none;
+    border-radius: 36px;
+    border: none;
+    outline: none;
+    font-family: "Ysabeau";
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.search-query:focus-within {
+    transform: translateY(1px);
+    box-shadow: 0 1px 10px rgba(255, 189, 189, 0.849);
+}
+
+.columns-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.columns-under-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    margin: 10px 0;
+}
+
+.column {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(177, 104, 146, 0.3);
+    border-radius: 16px;
+    padding: 32px 24px;
+    min-width: 180px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+
+.contact-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(177, 104, 146, 0.3);
+    border-radius: 16px;
+    padding: 32px 24px;
+    min-width: 180px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+.lnk {
+    font-family: "Ysabeau", sans-serif;
+    color: rgb(145, 134, 198);
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.lnk:hover {
+    font-family: "Ysabeau", sans-serif;
+    color: rgb(246, 107, 69);
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 
 /* End of CSS file */
   

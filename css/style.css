@@ -163,6 +163,7 @@ table {
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(0,0,0,0.35);
     transition: transform .12s ease, box-shadow .12s ease;
+    overflow: hidden;
 }
 
 .search-query:focus-within {
@@ -226,5 +227,128 @@ table {
 }
 
 
+.content-search-alignment {
+    text-align: flex-start;
+    margin-top: relative;
+}
+.column-search {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(177, 104, 146, 0.3);
+    border-radius: 16px;
+    padding: 32px 24px;
+    min-width: 200px;
+    text-align: left;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    height: 400px;
+    overflow-y: auto
+}
+
+td {
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+
+
+}
+
+
+
+.gsc-control-cse {
+    background-color: none !important;
+    border: 0 !important;
+    padding: 6px 8px 6px 2px !important;
+    margin: 0px;
+    width: 500px !important;
+    border-radius: 36px;
+    overflow: hidden;
+    padding: 30px 20px !important;
+    background: #fff !important;
+    color: rgb(101, 4, 64);
+    font-family: "Ysabeau" !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: transform .12s ease, box-shadow .12s ease;
+
+}
+
+form.gsc-search-box,
+table.gsc-search-box {
+    margin-bottom: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.gcse-search-box {
+    border: 0 !important;
+    background: transparent !important;
+}
+.gcse-search-box-tools .gcse-search-box .gcse-input {
+    padding-right: 0 !important;
+}
+#gs_tti50 {
+    padding: 0px 0 !important;
+}
+#gsc-i-id1 {
+    color: #000 !important;
+    text-indent: 0 !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+    background: transparent !important;
+    text-overflow: hidden !important;
+}
+#gsc-i-id1::-webkit-input-placeholder {
+    color: #000 !important;
+}
+#gsc-i-id1::-as-input-placeholder {
+    color: rgba(177, 104, 146, 0.3);
+}
+#gsc-i-id1::-moz-placeholder {
+    color: rgba(177, 104, 146, 0.3);
+    opacity: 1;
+}
+#gsc-i-id1::-moz-placeholder {
+    color: rgba(177, 104, 146, 0.3);
+    opacity: 1;
+}
+.gsib_a {
+    display: rgba(177, 104, 146, 0.3) !important;
+    border: none !important;
+    outline: none !important;
+}
+.gsib_b {
+    display: none !important;
+    outline: none !important;
+    border: none!important;
+}
+.gsc-search-button -v2 {
+    padding: 20px !important;
+    margin-left: auto !important;
+    outline: none !important;
+    border: none!important;
+    cursor: pointer;
+}
+.gsc-search-button-v2, gsc-search-button-v2:hover {
+    cursor: pointer;
+    outline: none !important;
+    border: none!important;
+}
+.gsc-search-button-v2, gsc-search-button-v2:hover {
+    background-color: transparent !important;
+    background-image: none !important;
+    outline: none !important;
+    border: none!important;
+}
+.gsc-search-button -v2:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+}
+.gsc-search-button -v2:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none!important;
+}
 /* End of CSS file */
   

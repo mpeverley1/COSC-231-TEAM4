@@ -7,14 +7,33 @@
         <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <script async src="https://cse.google.com/cse.js?cx=27923386513d44cf3">
-        </script>
+        (function () {
+        var cx = '210b06286d70b46c7';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol ==
+            'https:' ? 'https:': 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+        })();
+        window.onload = function () {
+            var title = "Search/Prompt";
+            var textBox = document.querySelector("#gsc-i-id1");
+            var button = document.querySelector
+            (".gsc-search-button-v2 svg title");
+            textBox.placeholder = title;
+            textBox.title = title;
+            button.innerHTHL = title;
+        }
+</script>
     </head>
     <header>
 
         <div>
             <img src="/img/MIRRORAI-logo-for-dark-bg.svg" alt="MirrorAI" class="logo"/>
         </div>
-        
         </header>
     <body>
         <div class="menuOP">
@@ -23,30 +42,32 @@
             <h3>About</h3>
             <h3>Sign In</h3> 
         </div>
-        <section>
-            
-                <div class="content-alignment">
-                    <div class="gcse-searchbox" ></div>
+        <section>           
+                <div class="content-search-alignment">
+                    <div ></div>
                     <div><input type="text" placeholder="Search/Prompt" class="search-query"></div>
                     <div class="columns-container">
-                        <div class="column"><h1>ChatGPT</h1></div>
-                        <div class="column"><h1>Gemini</h1>
-
-                        <div class="gcse-searchresults"></div></div>
-                        <div class="column"><h1>Copilot</h1></div>
+                        <table>
+                        <tbody>
+                        <tr>
+                            <td><div class="column-search"><h1>ChatGPT</h1></td></div>
+                            <td><div class="column-search"><h1>Gemini</h1>
+                                <div class="gcse-search"></div></td></div>
+                            <td><div class="column-search"><h1>Copilot</h1></td></div>
+                        </tr>
+                        </tbody>
+                        </table>                        
                     </div>
                 </div>
             </div>
         </section>
     
- 
-
     <footer class="footer">    
         <p><h4><a href="/ContactUs.html" class="lnk" >Contact Us</a>  | Data Privacy</h4>
-
     </footer>
+
     <div class="copyright">
-        <p>&copy; 2025 MirrorAI. All rights reserved.</p>
+        &copy; 2025 MirrorAI. All rights reserved.
     </div>
     </body>
 </html>

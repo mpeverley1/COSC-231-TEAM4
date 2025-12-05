@@ -1,14 +1,11 @@
 
 html {
-    height: 100%;
+    height: 100svh;
     margin: 0;
     display: flex; 
     justify-content: center;
-
 }
-
 body {
-
     display: flex;
     align-items: flex-start;
     place-items: center; 
@@ -17,64 +14,54 @@ body {
         linear-gradient(139deg,transparent 10%,#5A008F 96%),
         linear-gradient(4deg,transparent,#48404A 90%),
         linear-gradient(139deg,#48404A,transparent 30%);
-    background-attachment: fixed;
-          
+    background-attachment: fixed;      
 }
-
 body > * {
     margin: 20px;
 }
-  
 h1 {
     font-family: "Ysabeau";
-    color: rgb(242, 225, 225);
-
-      
+    color: rgb(242, 225, 225);      
 }
-
 h2 {
     font-family: "Ysabeau", sans-serif;
     color: rgb(221, 159, 142);
-
     font-style: italic;
     font-weight: 800;
 }
-
 h3 {
     font-family: "Ysabeau", serif;
     color: rgb(177, 104, 146);
-
-
-      
 }
-
 h4 {
     font-family: "Ysabeau", sans-serif;
     color: rgb(145, 134, 198);
-
-
 }
-
 h5, p {
     font-family: "Ysabeau", sans-serif;
     color: rgb(185, 173, 249);
 }
-
 ol {
     padding: 0.2em;
 }
-
 .block, li {
     padding: 0.2em;
 }
-
+table {
+    table-layout: flex;
+    width: flex;
+    border: 0px;
+}
+td {
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
 .logo {
     position: absolute;
     top: 20px;
     left: 20px;
 } 
-      
-  
 .ysabeau-tagline {
     font-family: "Ysabeau";
     color: aliceblue;
@@ -82,13 +69,14 @@ ol {
     font-weight: 800;
     font-style: italic;
 }
-
-
-.content-alignment {
-    text-align: center;
-    margin-top: 2px;
+.menuOP{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
 }
-
 .btn {
     display: inline-block;
     margin-top: 12px;
@@ -102,12 +90,60 @@ ol {
     box-shadow: 0 2px 12px rgba(0,0,0,0.35);
     transition: transform .12s ease, box-shadow .12s ease;
 }
+.smaller-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 80px;
+    background: linear-gradient(90deg,#d0c6ff,#d7e7ff);
+    color: rgb(79, 0, 49);
+    text-decoration: none;
+    border-radius: 16px;
+    font-family: "Ysabeau";
+    font-weight: 1600;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
+    transition: transform .12s ease, box-shadow .12s ease;
+}
+.smaller-btn,
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.45);
 }
-.btn:active { transform: translateY(0); }
-
+.smaller-btn,
+.btn:active { transform: translateY(0); 
+}
+.contact-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(177, 104, 146, 0.3);
+    border-radius: 16px;
+    padding: 32px 24px;
+    min-width: 180px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+.lnk {
+    font-family: "Ysabeau", sans-serif;
+    color: rgb(145, 134, 198);
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+}
+.lnk:hover {
+    font-family: "Ysabeau", sans-serif;
+    color: rgb(246, 107, 69);
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.forgot-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.forgot-links h5 {
+    margin: 0;
+    padding: 0;
+}
 .footer {
     font-family: "Ysabeau", sans-serif;
     color: rgb(145, 134, 198);
@@ -117,9 +153,7 @@ ol {
     right: 20px;
     justify-content: right;
     align-items: right;
-
 } 
-
 .copyright {
     font-family: "Ysabeau", sans-serif;
     color: rgb(189, 178, 244);
@@ -128,25 +162,9 @@ ol {
     bottom: 2px;
     left: 20px;
 }
-.menuOP{
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    justify-content: right;
-    align-items: right;
-    text-align: right;
-}
-
 .searchContain{
     margin-bottom: 20px;
 }
-
-table {
-    table-layout: flex;
-    width: flex;
-    border: 0px;
-}
-
 .search-query {
     text-align: left;
     display: inline-block;
@@ -165,13 +183,33 @@ table {
     transition: transform .12s ease, box-shadow .12s ease;
     overflow: hidden;
 }
-
 .input-field,
 .search-query:focus-within {
     transform: translateY(1px);
     box-shadow: 0 1px 10px rgba(255, 189, 189, 0.849);
 }
-
+.input-field {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+    width: 300px;
+    padding: 10px 10px;
+    background: whitesmoke;
+    color: rgb(18, 0, 11);
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: "Ysabeau";
+    font-weight: 300;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: transform .12s ease, box-shadow .12s ease;
+    overflow: hidden;
+}
+.content-alignment {
+    text-align: center;
+    margin-top: 2px;
+}
 .columns-container {
     display: flex;
     justify-content: center;
@@ -179,7 +217,6 @@ table {
     gap: 40px;
     margin: 40px 0;
 }
-
 .columns-under-container {
     display: flex;
     justify-content: center;
@@ -187,7 +224,6 @@ table {
     gap: 120px;
     margin: 10px 0;
 }
-
 .column {
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(177, 104, 146, 0.3);
@@ -198,42 +234,10 @@ table {
     color: #fff;
     box-shadow: 0 2px 12px rgba(0,0,0,0.12);
 }
-
-
-.contact-card {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(177, 104, 146, 0.3);
-    border-radius: 16px;
-    padding: 32px 24px;
-    min-width: 180px;
-    text-align: center;
-    color: #fff;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-}
-
-.lnk {
-    font-family: "Ysabeau", sans-serif;
-    color: rgb(145, 134, 198);
-    text-align: center;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.lnk:hover {
-    font-family: "Ysabeau", sans-serif;
-    color: rgb(246, 107, 69);
-    text-align: center;
-    font-weight: 600;
-    text-decoration: underline;
-}
-
-
 .content-search-alignment {
     text-align: flex-start;
     margin-top: relative;
 }
-
-
 .centered-container {
     display: flex;
     flex-direction: column;
@@ -241,28 +245,12 @@ table {
     align-items: center;
     margin: 15px auto;
 }
-
-
 .justified-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 15px auto;
 }
-
-.forgot-links {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.forgot-links h5 {
-    margin: 0;
-    padding: 0;
-}
-
-
-
 .column-search {
     background: rgba(255,255,255,0.04);
     border: 1px solid rgba(177, 104, 146, 0.3);
@@ -275,17 +263,6 @@ table {
     height: 400px;
     overflow-y: auto
 }
-
-td {
-    overflow: hidden;
-    white-space: wrap;
-    text-overflow: ellipsis;
-
-
-}
-
-
-
 .gsc-control-cse {
     background-color: none !important;
     border: 0 !important;
@@ -300,9 +277,7 @@ td {
     font-family: "Ysabeau" !important;
     box-shadow: 0 4px 12px rgba(0,0,0,0.35);
     transition: transform .12s ease, box-shadow .12s ease;
-
 }
-
 form.gsc-search-box,
 table.gsc-search-box {
     margin-bottom: 0 !important;
@@ -382,40 +357,6 @@ table.gsc-search-box {
     box-shadow: none !important;
     border: none!important;
 }
-
-.input-field {
-    text-align: left;
-    display: inline-block;
-    margin-top: 10px;
-    width: 300px;
-    padding: 10px 10px;
-    background: whitesmoke;
-    color: rgb(18, 0, 11);
-    text-decoration: none;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-family: "Ysabeau";
-    font-weight: 300;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
-    transition: transform .12s ease, box-shadow .12s ease;
-    overflow: hidden;
-}
-
-.smaller-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 12px 80px;
-    background: linear-gradient(90deg,#d0c6ff,#d7e7ff);
-    color: rgb(79, 0, 49);
-    text-decoration: none;
-    border-radius: 16px;
-    font-family: "Ysabeau";
-    font-weight: 1600;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.35);
-    transition: transform .12s ease, box-shadow .12s ease;
-}
-
 
 /* End of CSS file */
   

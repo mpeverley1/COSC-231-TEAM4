@@ -103,13 +103,11 @@ td {
     box-shadow: 0 2px 12px rgba(0,0,0,0.35);
     transition: transform .12s ease, box-shadow .12s ease;
 }
-.smaller-btn,
-.btn:hover {
+.smaller-btn:hover, .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.45);
 }
-.smaller-btn,
-.btn:active { transform: translateY(0); 
+.smaller-btn:active, .btn:active { transform: translateY(0); 
 }
 .contact-card {
     background: rgba(255,255,255,0.04);

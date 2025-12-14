@@ -1,0 +1,123 @@
+<!DOCTYPE html><html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-image: linear-gradient(to bottom, rgb(187, 85, 184), rgb(118, 95, 172));
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  border-radius: 10px;
+}
+
+</style>
+</head>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>History</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <header>
+        <div>
+        <a href="../index.html"><img src="../img/MIRRORAI-logo-for-dark-bg.svg" alt="MirrorAI" class="logo"/></a>
+        </div>
+    </header>
+
+    <body> 
+      <div class="menuOP">
+          <h3><a href="AccountPage.html" class="lnk">Account</a></h3>
+          <h3><a href="History.html" class="lnk">History</a></h3>
+          <h3><a href="AboutUs.html" class="lnk">About</a></h3>
+          <h3><a href="Login.html" class="lnk">Sign In</a></h3> 
+      </div>
+  </body>
+
+<body>
+<div class="content-search-alignment">
+<h1>AI Search History</h1>
+
+<p>Your recent AI searches:</p>
+
+<button type="button" class="collapsible">ChatGPT</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<br></br>
+<button type="button" class="collapsible">Gemini</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<br></br>
+<button type="button" class="collapsible">Copilot</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<br></br>
+</div>
+</body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+
+
+
+<footer class="footer">    
+  <p><h4><a href="ContactUs.html" class="lnk">Contact Us</a>  | <span style="text-decoration: underline;">Data Privacy</span> | <a href="TermsAndConditions.html" class="lnk">Terms and Conditions</a></h4></p>
+</footer>
+<div class="copyright"><h5>&copy; 2025 MirrorAI. All rights reserved.</h5></div>
+</html>
